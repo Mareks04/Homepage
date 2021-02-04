@@ -1,12 +1,10 @@
-.login {
+.login {    
     margin: auto;
     margin-top: 160px;
     width: 30%;
     height: 60%;
-    padding: 10px;
     text-align: center;
     border-radius: 5px;
-    border: 1px solid red;
 }
 
 .logo-login {
@@ -23,16 +21,20 @@ input {
 }
 
 button {
-    margin-top: 10px;
     cursor: pointer;
     border-radius: 4px;
 }
+
+.login_button {
+    margin-top: 10px;
+}
+
 button:hover {
     background-color: #131110; 
     color: white;
   }
 
-input[type=text] {
+input[type=text], input[type=password] {
     width: 100%;
     box-sizing: border-box;
     border: 2px solid #ccc;
@@ -48,12 +50,81 @@ input[type=text] {
   }
   
   .signup-button {
-    position:relative;
-    display: inline-block;
-    justify-content: center;
-    border: solid 1px red;
+    width: 100%;
+    text-align: center;
     cursor: pointer;
     border-radius: 4px;
+  }
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn:hover {
+    background-color: #f44336;
+  }
 
+  /* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Add padding to container elements */
+  .container {
+    padding: 10px;
+    width: 50%;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    padding-top: 30px;
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #353535;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 25% auto; /* 5% from the top, 15% from the bottom and centered */
+    border-radius: 8px;
+    width: 30%; /* Could be more or less, depending on screen size */
+    text-align: center;
+  }
+  
+  /* Style the horizontal ruler */
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 20px;
+  }
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 35px;
+    top: 10px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+  /* Clear floats */
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+    padding-bottom: 10px;
+  }
+
+  /* Change styles for cancel button and signup button on extra small screens */
+  @media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+      width: 100%;
+    }
   }
 

@@ -1,0 +1,279 @@
+body
+{
+    margin: 0;
+    background-color: black;
+}
+
+.logo {
+    filter: brightness(0) invert(1);
+    height: 70px;
+    margin-top: 0;
+}
+
+.topnav {
+    position: fixed;
+    background-color: #333;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    z-index: 1;
+  }
+
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 0px 10px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+
+  .topnav-right {
+    float: right;
+    padding: 27px;
+  }
+
+  .topnav a:hover {
+    text-decoration: underline;
+  }
+
+  .topnav a.active {
+    text-decoration: underline;
+    color: white;
+  }
+
+  .topnav .icon {
+    display: none;
+  }
+
+  .bg {
+    margin-top: 50px;
+    position: relative;
+    color: white;
+  }
+
+  .backimg {
+    width: 100%;
+  }
+
+  .welcome {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0; 
+    width: 60%;
+    top: 83%;
+    text-align: center;
+    font-style: italic;
+    font-size: 2vw;
+  }
+
+  .welcome h1 {
+    top: 60%;
+    font-family: 'Dancing Script', cursive;
+  }
+
+  .weoffer {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+    margin-top: 50px;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: #007cba;
+  }
+  
+  .grid-item {
+    margin: 0;
+    padding: 0px;
+    margin-left: 0;
+    margin-right: 0;
+    vertical-align: middle;
+  }
+
+  #one img {
+    width: 100%;
+  }
+
+
+  #two {
+    color: rgb(255, 255, 255);
+    font-family: 'Lexend Mega', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    padding: 40px;
+  }
+
+  #two p {
+    font-size: 1vw;
+  }
+
+  .wtext {
+    font-size: 3vw;
+  }
+
+  .row1, .row2 {
+    display: inline-block;
+  }
+
+  .row1, .row2 p {
+    color: white;
+  }
+
+  .chrome, .zinc {
+    height: 300px;;
+  }
+
+  .service {
+    margin: 100px 30px 30px 30px;
+  
+  }
+
+  .service p {
+    font-family: cursive;
+    font-size: 14px;
+  }
+
+  .info {
+    position: relative;
+    top: 10px;
+    width: 100%;
+    border-top: solid 1px rgb(53, 49, 49);
+  }
+
+  .info p {
+    color: rgb(184, 179, 179);
+    float: left;
+    padding: 15px 0px 20px 15px;
+
+  }
+
+  .facebook img {
+    width: 30px;
+    position: relative;
+    float: right;
+    padding: 15px 15px 15px 15px;
+    margin-top: 5px;
+  }
+
+  .instagram img {
+    position: relative;
+    float: right;
+    width: 30px;
+    margin-top: 5px;
+    padding: 15px 15px 15px 15px;
+  }
+
+  .cars{
+    margin-top: 100px;
+  }
+
+  h3 {
+    color: white;
+    margin-left: 40px;
+    font-family: monospace;
+  }
+
+  .row {
+    display: flex;
+  }
+
+  .aboutus {
+    text-align: center;
+    margin: 100px 30px 30px 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .aboutus h2 {
+    color: whitesmoke;
+    font-family: monospace;
+  }
+
+  /* Create three equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    padding: 15px;
+  }
+
+  .contactus {
+    margin-top: 100px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .contactinfo {
+    color: white;
+    font-family: monospace;
+    font-size: 3vh;
+  }
+
+
+
+  @media screen and (max-width: 900px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+    .logo {
+        height: 60px;
+        padding-top: 5px;
+    }
+    #one img {
+      padding-top: 15px;
+      width: 50vw;
+    }
+
+  }
+
+  @media screen and (max-width: 900px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+    .logo {
+        height: 50px;
+        padding-top: 10px;
+    }
+    #one img {
+      display: none;
+    }
+    .facebook, .instagram img {
+      float: none;
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
