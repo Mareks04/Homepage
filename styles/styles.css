@@ -1,67 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+
 body
 {
     margin: 0;
+    padding: 0;
     background-color: black;
-}
-
-.logo {
-    filter: brightness(0) invert(1);
-    height: 70px;
-    margin-top: 0;
-}
-
-.topnav {
-    position: fixed;
-    background-color: #333;
-    overflow: hidden;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 10%;
-    z-index: 1;
-  }
-
-  .topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 0px 10px;
-    text-decoration: none;
-    font-size: 17px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-  }
-
-  .topnav-right {
-    float: right;
-    padding: 27px;
-  }
-
-  .topnav a:hover {
-    text-decoration: underline;
-  }
-
-  .topnav a.active {
-    text-decoration: underline;
     color: white;
-  }
+}
 
-  .topnav .icon {
-    display: none;
-  }
+/* Navbar start */
 
+.logo img {
+    filter: brightness(0) invert(1);
+    max-width: 150px;
+}
+
+.navbar {
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  right: 0;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(100, 100, 100, 0.9);
+  z-index: 1;
+}
+
+.navbar-links ul {
+  margin: 0;
+  margin-right: 20px;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li {
+  list-style: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  display: block;
+}
+
+.navbar-links li .active {
+  text-decoration: underline;
+}
+
+.navbar-links li:hover {
+  text-decoration: underline;
+}
+
+.toggle-button {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+}
+
+.toggle-button .bar {
+  height: 4px;
+  width: 100%;
+  background-color: white;
+}
+
+/* Navbar end */
+/* Background img with h1 start */
   .bg {
-    margin-top: 50px;
     position: relative;
     color: white;
   }
 
-  .backimg {
-    width: 100%;
+  .bg img {
+    max-width: 100%;
   }
 
-  .welcome {
+  .bg h1 {
     position: absolute;
     margin: 0 auto;
     left: 0;
@@ -70,38 +93,29 @@ body
     top: 83%;
     text-align: center;
     font-style: italic;
-    font-size: 2vw;
-  }
-
-  .welcome h1 {
-    top: 60%;
+    font-size: 4.5vw;
     font-family: 'Dancing Script', cursive;
   }
 
+  /* Background img with h1 end */
+  /* we offer section (indext.html) start */
   .weoffer {
+    margin-top: 20px;
     display: inline-grid;
     grid-template-columns: auto auto;
     width: 100%;
-    margin-top: 50px;
-    margin-left: 0;
-    margin-right: 0;
     background-color: #007cba;
   }
   
-  .grid-item {
-    margin: 0;
-    padding: 0px;
-    margin-left: 0;
-    margin-right: 0;
-    vertical-align: middle;
-  }
 
-  #one img {
-    width: 100%;
+  .weoffer img {
+    max-width: 700px;
+    margin-top: auto;
+    margin-bottom: auto;
   }
 
 
-  #two {
+  .two {
     color: rgb(255, 255, 255);
     font-family: 'Lexend Mega', sans-serif;
     font-weight: bold;
@@ -109,96 +123,156 @@ body
     padding: 40px;
   }
 
-  #two p {
-    font-size: 1vw;
+  .two p {
+    font-size: 1.8vw;
   }
 
   .wtext {
-    font-size: 3vw;
+    font-size: 3.6vw;
   }
+/* we offer section (indext.html) end */
 
-  .row1, .row2 {
-    display: inline-block;
-  }
 
-  .row1, .row2 p {
-    color: white;
-  }
-
-  .chrome, .zinc {
-    height: 300px;;
-  }
-
-  .service {
-    margin: 100px 30px 30px 30px;
-  
-  }
-
-  .service p {
-    font-family: cursive;
-    font-size: 14px;
-  }
-
+/* footer start */
   .info {
-    position: relative;
-    top: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 80px;
     width: 100%;
-    border-top: solid 1px rgb(53, 49, 49);
+    color: rgb(184, 179, 179);
+    border-top: solid 1px rgb(90, 90, 90);
   }
 
   .info p {
-    color: rgb(184, 179, 179);
-    float: left;
-    padding: 15px 0px 20px 15px;
-
+    display: inline-block;
+    margin-top: 35px;
   }
-
-  .facebook img {
-    width: 30px;
-    position: relative;
+  .info a {
     float: right;
-    padding: 15px 15px 15px 15px;
-    margin-top: 5px;
+    padding-right: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
   }
 
-  .instagram img {
-    position: relative;
-    float: right;
-    width: 30px;
-    margin-top: 5px;
-    padding: 15px 15px 15px 15px;
+   .info a img {
+     width: 30px;
+   }
+/* footer end */
+
+/* (services.html) satrt */
+
+.chrome {
+  margin: 130px 0px 30px 0px;
+  position: relative;
+  text-align: center;
+
+}
+.center {
+  position: absolute;
+  top: 29%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4vw;
+  font-family: 'Montserrat', sans-serif;
+}
+.work {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2em;
+  padding: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  word-spacing: 70px;
+  line-height: 60px;
+}
+.chrome img {
+  max-width: 100%;
+  opacity: 0.2;
+}
+
+.process {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  padding: 30px 60px 15px 60px;
+  background-color: rgb(121, 121, 121);
+  color: rgb(0, 0, 0);
+}
+
+.process a {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+.process, .concours-restoration h3 {
+  /* text-align: right; */
+  padding-top: 15px;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.restoration-row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.resto-column {
+  float: left;
+  width: 25%;
+}
+.resto-column img {
+  width: 100%;
+}
+
+.concours-restoration {
+  position: relative;
+  bottom: 30px;
+  text-align: center;
+  padding: 10px 60px 15px 60px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgb(121, 121, 121);
+  color: rgb(0, 0, 0);
+}
+
+.concours-restoration a {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+/* services end */
+
+/* inventory start */
+  .cars1 {
+    margin-top: 120px;
   }
 
-  .cars{
-    margin-top: 100px;
-  }
-
-  h3 {
+  .cars, .cars1 h3 {
     color: white;
     margin-left: 40px;
-    font-family: monospace;
+    font-family: 'Lexend Mega', sans-serif;
   }
 
   .row {
     display: flex;
   }
 
+  .column {
+    flex: 25%;
+    padding: 15px;
+  }
+
   .aboutus {
+    font-family: 'Lexend Mega', sans-serif;
     text-align: center;
-    margin: 100px 30px 30px 30px;
+    margin: 100px 30px 0px 30px;
     padding-left: 60px;
     padding-right: 60px;
   }
 
   .aboutus h2 {
-    color: whitesmoke;
-    font-family: monospace;
-  }
-
-  /* Create three equal columns that sits next to each other */
-  .column {
-    flex: 25%;
-    padding: 15px;
+    color: rgb(117, 116, 116);
   }
 
   .contactus {
@@ -208,72 +282,131 @@ body
   }
 
   .contactinfo {
-    color: white;
-    font-family: monospace;
+    color: rgb(70, 68, 68);
+    font-family: 'Lexend Mega', sans-serif;
     font-size: 3vh;
   }
 
-
-
-  @media screen and (max-width: 900px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-      float: right;
+  @media (max-width:1100px) {
+    .weoffer {
       display: block;
     }
-    .logo {
-        height: 60px;
-        padding-top: 5px;
-    }
-    #one img {
-      padding-top: 15px;
-      width: 50vw;
+    .weoffer img {
+      max-width: 100%;
     }
 
+    .work {
+      max-width: 800px;
+      text-align: center;
+    }
+    .center {
+      top: 20%;
+    }
+    .resto-column {
+      float: left;
+      width: 50%;
+    }
+    .resto-column img {
+      width: 100%;
+    }
+  
   }
 
-  @media screen and (max-width: 900px) {
-    .topnav.responsive {position: relative;}
-    .topnav.responsive a.icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-  }
+  @media (max-width:750px) {
 
-  @media screen and (max-width: 640px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-      float: right;
-      display: block;
+    .logo img {
+      max-width: 100px;
     }
-    .logo {
-        height: 50px;
-        padding-top: 10px;
+  
+    .toggle-button {
+      display: flex;
+      top: 1.5rem; 
+      right: 1.5rem; 
     }
-    #one img {
+  
+    .navbar-links {
       display: none;
+      width: 100%;
     }
-    .facebook, .instagram img {
-      float: none;
+    .process h3 {
+      text-align: center;
     }
+  
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar-links ul {
+      width: 100%;
+      flex-direction: column;
+    }
+  
+    .navbar-links li {
+      text-align: center;
+    }
+  
+    .navbar-links li a {
+      padding: .5rem 1rem;
+    }
+  
+    .navbar-links.active {
+      display: flex;
+    } 
+
+    .weoffer {
+      display: inline-block;
+    }
+
+    
+/* Services page start */
+    .chrome {
+      margin-top: 80px;
+    }
+    .zinc {
+      margin-top: 30px;
+    }
+    .chrome img, .zinc img {
+      max-width: 100%;
+    }
+    .center {
+      top: 17%;
+    }
+    /* Services pages end */
   }
 
-  @media screen and (max-width: 640px) {
-    .topnav.responsive {position: relative;}
-    .topnav.responsive a.icon {
-      position: absolute;
-      right: 0;
-      top: 0;
+
+  @media (max-width: 450px) {
+    .navbar {
+      background: rgb(100, 100, 100);
     }
-    .topnav.responsive a {
+    .info {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .info a {
       float: none;
-      display: block;
-      text-align: left;
     }
+    .bg {
+      top: 50px;
+    }
+
+    .chrome {
+      margin-top: 65px;
+    }
+
+    .center {
+      top: 7%;
+    }
+    .work {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+    
   }
+
+
+
+ 
