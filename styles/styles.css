@@ -247,10 +247,9 @@ body
     margin-top: 120px;
   }
 
-  .cars, .cars1 h3 {
-    color: white;
-    margin-left: 40px;
-    font-family: 'Lexend Mega', sans-serif;
+  .cars h3, .cars1 h3 {
+    margin-left: 30px;
+    font-family: 'Montserrat', sans-serif;
   }
 
   .row {
@@ -261,6 +260,89 @@ body
     flex: 25%;
     padding: 15px;
   }
+
+    /* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+  /* Inventory end */
 
   .aboutus {
     font-family: 'Lexend Mega', sans-serif;
@@ -307,6 +389,9 @@ body
     }
     .resto-column img {
       width: 100%;
+    }
+    .column {
+      padding: 10px;
     }
   
   }
@@ -357,6 +442,10 @@ body
       display: inline-block;
     }
 
+    .column {
+      padding: 4px;
+    }
+
     
 /* Services page start */
     .chrome {
@@ -395,13 +484,30 @@ body
     }
 
     .center {
-      top: 9%;
+      top: 7%;
     }
     .work {
       margin-top: 0px;
       margin-bottom: 0px;
       padding-top: 0px;
       padding-bottom: 0px;
+    }
+
+    .cars1 {
+      margin-top: 80px;
+    }
+
+    .cars1 h3, .cars h3 {
+      text-align: center;
+      margin-left: 0px;
+    }
+
+    .row {
+      display: block;
+    }
+
+    .column {
+      padding: 0px;
     }
     
   }

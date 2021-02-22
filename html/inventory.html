@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/styles.css">
     <title>Inventory</title>
 </head>
 
 <body>
-      <!-- Navbar start -->
-      <nav class="navbar">
+    <!-- Navbar start -->
+    <nav class="navbar">
         <div class="logo"><a href="#"><img src="../img/classic-investments-logo-s.png" alt="CI Logo"></a></div>
         <a href="#" class="toggle-button">
             <span class="bar"></span>
@@ -20,7 +22,7 @@
         </a>
         <div class="navbar-links">
             <ul>
-                <li><a href="../index.html" >Welcome</a></li>
+                <li><a href="../index.html">Welcome</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="#" class="active">Inventory</a></li>
                 <li><a href="about-us.html">About</a></li>
@@ -33,14 +35,34 @@
         <h3> 1969 Dodge Charger R/T</h3>
         <div class="row">
             <div class="column">
-                <img src="https://www.classic.investments/wp-content/uploads/2020/02/69-w-10.jpg" alt="charger 69" style="width:100%">
+                <img src="https://www.classic.investments/wp-content/uploads/2020/02/69-w-10.jpg" alt="charger 69"
+                    style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
             </div>
             <div class="column">
-                <img src="https://www.classic.investments/wp-content/uploads/2020/02/69-w-11.jpg" alt="charger 69" style="width:100%">
+                <img src="https://www.classic.investments/wp-content/uploads/2020/02/69-w-11.jpg" alt="charger 69"
+                    style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
             </div>
             <div class="column">
-                <img src="https://www.classic.investments/wp-content/uploads/2020/05/69-w-33.jpg" alt="charger 69" style="width:100%">
+                <img src="https://www.classic.investments/wp-content/uploads/2020/05/69-w-33.jpg" alt="charger 69"
+                    style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
             </div>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <div class="mySlides">
+                <img src="https://www.classic.investments/wp-content/uploads/2020/02/69-w-10.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <img src="https://www.classic.investments/wp-content/uploads/2020/02/69-w-11.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <img src="https://www.classic.investments/wp-content/uploads/2020/05/69-w-33.jpg" style="width:100%">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
     </div>
 
@@ -48,13 +70,16 @@
         <h3> 1970 Dodge Charger</h3>
         <div class="row">
             <div class="column">
-                <img src="https://www.classic.investments/wp-content/uploads/2020/01/x05.jpg" alt="charger 70" style="width:100%">
+                <img src="https://www.classic.investments/wp-content/uploads/2020/01/x05.jpg" alt="charger 70"
+                    style="width:100%">
             </div>
             <div class="column">
-                <img src="https://www.classic.investments/wp-content/uploads/2020/01/x16.jpg" alt="charger 70" style="width:100%">
+                <img src="https://www.classic.investments/wp-content/uploads/2020/01/x16.jpg" alt="charger 70"
+                    style="width:100%">
             </div>
             <div class="column">
-                <img src="https://www.classic.investments/wp-content/uploads/2020/01/x28.jpg" alt="charger 70" style="width:100%">
+                <img src="https://www.classic.investments/wp-content/uploads/2020/01/x28.jpg" alt="charger 70"
+                    style="width:100%">
             </div>
         </div>
     </div>
@@ -63,10 +88,12 @@
         <h3> 1966 Jaguar E-type</h3>
         <div class="row">
             <div class="column">
-                <img src="https://www.classic.investments/wp-content/uploads/2020/01/66-before.jpg" alt="E-Type 66" style="width:100%">
+                <img src="https://www.classic.investments/wp-content/uploads/2020/01/66-before.jpg" alt="E-Type 66"
+                    style="width:100%">
             </div>
             <div class="column">
-                <img src="https://www.classic.investments/wp-content/uploads/2020/01/66-after.jpg" alt="E-Type 66" style="width:100%">
+                <img src="https://www.classic.investments/wp-content/uploads/2020/01/66-after.jpg" alt="E-Type 66"
+                    style="width:100%">
             </div>
         </div>
     </div>
