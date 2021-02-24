@@ -363,6 +363,9 @@ img {
   .aboutcol img {
     width: 100%;
   }
+  .before {
+    opacity: 0.8;
+  }
 
   .aboutus2 {
     font-family: 'Montserrat', sans-serif;
@@ -370,7 +373,7 @@ img {
     color: rgb(120, 120, 120);
     margin: 0px 110px 0px 110px;
   }
-
+/* About us END */
   .contactus {
     margin-top: 100px;
     width: 100%;
