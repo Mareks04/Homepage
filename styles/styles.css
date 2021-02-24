@@ -374,17 +374,20 @@ img {
     margin: 40px 110px 40px 110px;
   }
 /* About us END */
+/* Contact us START */
   .contactus {
-    margin-top: 100px;
+    margin-top: 91px;
     width: 100%;
     text-align: center;
   }
 
   .contactinfo {
     color: rgb(70, 68, 68);
-    font-family: 'Lexend Mega', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 3vh;
   }
+
+  /* Contact us END */
 
   @media (max-width:1100px) {
     .weoffer {
