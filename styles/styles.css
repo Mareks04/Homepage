@@ -266,7 +266,6 @@ body
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 90px;
   left: 0;
   top: 0;
   width: 100%;
@@ -278,10 +277,11 @@ body
 .modal-content {
   position: relative;
   background-color: #fefefe;
-  margin: auto;
-  padding: 0;
-  width: 90%;
-  max-width: 1000px;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  max-width: 800px;
 }
 
 /* The Close Button */
@@ -462,6 +462,18 @@ img {
       padding: 4px;
     }
 
+    .aboutus2 {
+      margin: 0px 60px 0px 60px;
+    }
+
+    .aboutus {
+      margin-top: 60px;
+    }
+
+    .aboutcol {
+      width: 45%;
+    }
+
     
 /* Services page start */
     .chrome {
@@ -524,6 +536,26 @@ img {
 
     .column {
       padding: 0px;
+    }
+
+    .aboutus {
+      margin-top: 60px;
+      display: block;
+    }
+
+    .aboutcol {
+      width: 100%;
+    }
+
+    .aboutus2 {
+      margin: 0px 35px 0px 35px;
+    }
+
+    .info {
+      margin-top: 0px;
+    }
+    .info a {
+      padding-bottom: 20px;
     }
     
   }
