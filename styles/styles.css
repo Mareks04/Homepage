@@ -378,24 +378,30 @@ img {
 /* About us END */
 /* Contact us START */
   .contact {
-    margin-top: 110px;
+    margin-top: 100px;
     width: 100%;
-    text-align: center;
     color: rgb(212, 196, 196);
+    text-align: center;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 3vh;
   }
 
   .contact-field {
     display: flex;
-    margin: 50px 30px 50px 30px;
+    margin: 5px 30px 50px 30px;
     text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: rgb(212, 196, 196);
   }
 
   .input-info {
     width: 50%;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 2em;
+  }
+  #fname {
+    margin-top: 20px;
   }
   textarea, .input-info input[type=text], select {
     width: 70%;
@@ -408,7 +414,8 @@ img {
     resize: none;
   }
   #message {
-    height: 150px;
+    height: 100px;
+    font-family: Arial, Helvetica, sans-serif;
   }
   input[type=submit] {
     background-color: #000000;
@@ -424,12 +431,28 @@ img {
   }
   .contact-info{
     width: 50%;
+    text-align: left;
   }
-  .contact-info img  {
-    width: 30px;
+  .info-inner {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(233, 2, 2, 0.9);
+    border-radius: 10px;
+    padding: 30px 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    font-size: 1.5em;
   }
-
- 
+  #mail {
+    text-decoration: underline;
+  }
+.mobile {
+  display: flex;
+}
+.mobile div {
+  margin-left: 10px;
+}
   /* Contact us END */
 
   @media (max-width:1100px) {
@@ -457,6 +480,26 @@ img {
     .column {
       padding: 10px;
     }
+    /* Contact page start */
+      .contact-field {
+        display: block;
+        border: 1px solid red;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+      }
+      .input-info {
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        border: solid 1px red;
+        width: 60%;
+      }
+      .contact-info {
+        width: 100%;
+        margin: 50px;
+      }
+    
   
   }
 
