@@ -388,12 +388,23 @@ img {
 
   .contact-field {
     display: flex;
-    margin: 5px 30px 50px 30px;
+    margin: 5px 0px 50px 0px;
     text-align: center;
     align-items: center;
     justify-content: center;
     color: rgb(212, 196, 196);
   }
+ .contact-field::before {    
+    content: "";
+    background-image: url(https://www.classic.investments/wp-content/uploads/2020/08/70-a-04.jpg);
+    opacity: 0.1;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
 
   .input-info {
     width: 50%;
@@ -483,23 +494,19 @@ img {
     /* Contact page start */
       .contact-field {
         display: block;
-        border: 1px solid red;
-        text-align: center;
-        align-items: center;
         justify-content: center;
       }
       .input-info {
         margin-top: 20px;
         margin-left: auto;
         margin-right: auto;
-        border: solid 1px red;
-        width: 60%;
+        width: 100%;
       }
       .contact-info {
         width: 100%;
-        margin: 50px;
+        margin-top: 50px;
       }
-    
+    /* Contact page END */
   
   }
 
@@ -581,8 +588,16 @@ img {
     /* Services pages end */
     /* Contact us start */
     .contact {
-      margin-top: 61px;
+      margin-top: 75px;
     }
+    .input-info {
+      margin-top: 5px;
+      width: 100%;
+    }
+    .info-inner {
+      font-size: 1.3em;
+    }
+    /* Contact page END */
 
   }
 
@@ -655,6 +670,21 @@ img {
     }
     .info a {
       padding-bottom: 20px;
+    }
+    /* Contact start */
+    .contact-field {
+      padding: 0px;
+      margin: 0px 10px;
+    }
+    .contact-info {
+      width: 100%;
+    }
+    .info-inner {
+      width: 100%;
+      font-size: 1.1em;
+    }
+    textarea, .input-info input[type=text], select {
+      width: 100%;
     }
     
   }
