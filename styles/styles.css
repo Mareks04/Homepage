@@ -599,6 +599,7 @@ img {
     .navbar {
       background: rgb(100, 100, 100);
     }
+    /* Footer START */
     .info {
       text-align: center;
       margin-bottom: 50px;
@@ -606,8 +607,16 @@ img {
     .info a {
       float: none;
     }
+    /* Footer End */
+    /* Index START */
     .bg {
       top: 50px;
+    }
+    .weoffer {
+      background-color: black;
+    }
+    .two {
+      background-color: #007cba;
     }
 
     .chrome {
