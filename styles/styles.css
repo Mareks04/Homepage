@@ -377,8 +377,13 @@ img {
   }
 /* About us END */
 /* Contact us START */
+  .container {
+    background-image: url(../img/70-a-04.jpg);
+
+  }
   .contact {
     margin-top: 100px;
+    margin-bottom: 95px;
     width: 100%;
     color: rgb(212, 196, 196);
     text-align: center;
@@ -394,18 +399,6 @@ img {
     justify-content: center;
     color: rgb(212, 196, 196);
   }
- .contact-field::before {    
-    content: "";
-    background-image: url(https://www.classic.investments/wp-content/uploads/2020/08/70-a-04.jpg);
-    opacity: 0.1;
-    background-size: cover;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-}
-
   .input-info {
     width: 50%;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
